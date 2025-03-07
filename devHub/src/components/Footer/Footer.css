@@ -1,0 +1,80 @@
+.footContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 70px;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+.footContainer ul {
+  padding: 0;
+  text-decoration: none;
+  gap: 4px;
+}
+
+.footContainer a {
+  text-decoration: underline;
+  color: white;
+}
+
+.footContainer .left a {
+  display: flex;
+  color: white;
+  padding: 5px 5px 5px;
+  border-radius: 3px;
+}
+
+.facebook {
+  background-color: #415894;
+}
+
+.youtube {
+  background-color: #bc342a;
+}
+
+.twitter {
+  background-color: #6baae8;
+}
+
+.instagram {
+  background-color: #d24e61;
+}
+
+@media screen and (max-width: 768px) {
+  .footContainer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px 30px;
+    text-align: center;
+  }
+  
+  .footContainer .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footContainer .right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footContainer ul {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footContainer {
+    padding: 15px 20px;
+  }
+  
+  .footContainer .left p {
+    font-size: 14px;
+  }
+ 
+  .footContainer .right p {
+    font-size: 14px;
+  }
+}
